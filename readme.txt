@@ -42,7 +42,7 @@ git checkout -- <file>
 //丢弃暂存区的修改
 git reset HEAD <file>
 
-//本地仓库关联一个远程仓库:其中origin是为远程仓库指定的名字
+//本地仓库关联一个远程仓库:其中origin是为远程仓库指定的名字,server-name一般是github.com
 git remote add origin git@server-name:path/repo-name.git
 
 //查看远程库信息：远程库名字与远程库链接
@@ -50,3 +50,6 @@ git remote -v
 
 //删除远程库：根据名字删除
 git remote rm origin
+
+//将远程库克隆到本地库
+git clone git@server-name:path/repo-name.git
