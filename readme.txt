@@ -20,8 +20,9 @@ git commit -m <message>
 git status
 
 //查看修改的内容
-git diff  //查看工作区与暂存区的差异
+git diff  //查看工作区与暂存区的差异，暂存区为空时则与仓库比较
 git diff --cached  //查看暂存区与仓库的差异
+git diff HEAD //查看暂存区与仓库最新版本的差异
 
 //查看提交日志:HEAD指针指向的是当前版本
 git log
