@@ -6,7 +6,6 @@ how to use git
 暂存区分支master仓库：存放所有版本的文件
 **/
 
-
 //初始化git仓库:必须到想要建仓库的目录下
 git init
 
@@ -36,3 +35,18 @@ git reset --hard <commit id>
 
 //查看命令日志：包含每一次提交、版本变换
 git reflog
+
+//丢弃工作区的修改
+git checkout -- <file>
+
+//丢弃暂存区的修改
+git reset HEAD <file>
+
+//本地仓库关联一个远程仓库:其中origin是为远程仓库指定的名字
+git remote add origin git@server-name:path/repo-name.git
+
+//查看远程库信息：远程库名字与远程库链接
+git remote -v
+
+//删除远程库：根据名字删除
+git remote rm origin
