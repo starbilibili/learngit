@@ -1,9 +1,18 @@
 how to use git
 
+/**git管理文件夹可以分为三层，
+工作区：实际能看到的文件夹
+暂存区stage：.git文件夹内隐藏的区域
+暂存区分支master仓库：存放所有版本的文件
+**/
+
+
 //初始化git仓库:必须到想要建仓库的目录下
 git init
 
 //添加文件到git仓库:分两步，第二步的message是本次提交的说明
+//add命令实际是将修改文件从工作区存入暂存区中
+//commit命令则将暂存区内的文件全部提交到仓库
 git add <file>
 git commit -m <message>
 
@@ -11,7 +20,8 @@ git commit -m <message>
 git status
 
 //查看修改的内容
-git diff
+git diff  //查看工作区与暂存区的差异
+git diff --cached  //查看暂存区与仓库的差异
 
 //查看提交日志:HEAD指针指向的是当前版本
 git log
