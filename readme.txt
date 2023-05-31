@@ -123,3 +123,11 @@ git tag
 //查看指定标签信息
 git show <tag-v>
 
+//删除标签
+git tag -d <tag-v> //删除本地标签
+git push origin :refs/tags/<tag-v>  //删除远程仓库标签
+
+//推送标签
+git push origin <tag-v>
+git push origin --tags //推送全部标签
+////////////////////////////////////////////////////////////////////
