@@ -68,8 +68,10 @@ git switch <branch-name>
 git checkout -b <branch-name>
 git switch -c <branch-name>
 
-//合并某分支到当前分支
+//合并某分支到当前分支:默认使用fast-forward模式合并，合并后不会产生日志
 git merge <branch-name>
+//使用普通模式合并，会产生日志
+git merge --nn-ff -m "message" <branch-name>
 
 //删除分支
 git branch -d <branch-name>
