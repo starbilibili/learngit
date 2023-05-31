@@ -53,3 +53,23 @@ git remote rm origin
 
 //将远程库克隆到本地库
 git clone git@server-name:path/repo-name.git
+
+//查看分支
+git branch
+
+//创建分支
+git branch <branch-name>
+
+//切换分支
+git checkout <branch-name>  
+git switch <branch-name>
+
+//创建并切换分支
+git checkout -b <branch-name>
+git switch -c <branch-name>
+
+//合并某分支到当前分支
+git merge <branch-name>
+
+//删除分支
+git branch -d <branch-name>
